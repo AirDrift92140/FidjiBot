@@ -96,29 +96,6 @@ for (const folder of commandFolders) {
 }
 
 /**********************************************************************/
-// Registration of Slash-Command Interactions.
-
-/**
- * @type {String[]}
- * @description All slash commands.
- */
-
-const slashCommands = fs.readdirSync("./interactions/slash");
-
-// Loop through all files and store slash-commands in slashCommands collection.
-
-for (const module of slashCommands) {
-	const commandFiles = fs
-		.readdirSync(`./interactions/slash/${module}`)
-		.filter((file) => file.endsWith(".js"));
-
-	for (const commandFile of commandFiles) {
-		const command = require(`./interactions/slash/${module}/${commandFile}`);
-		client.slashCommands.set(command.data.name, command);
-	}
-}
-
-/**********************************************************************/
 // Registration of Autocomplete Interactions.
 
 /**

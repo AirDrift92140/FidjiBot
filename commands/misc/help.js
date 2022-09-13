@@ -33,16 +33,17 @@ module.exports = {
 			 */
 
 			let helpEmbed = new EmbedBuilder()
-				.setColor("Random")
-				.setTitle("List of all my commands")
+				.setColor("#F50052")
+				.setTitle("Liste de toutes mes commendes")
+				.setImage("https://animegalaxyofficial.com/wp-content/uploads/2021/05/gojo-satoru.jpg")
 				.setDescription(
 					"`" + commands.map((command) => command.name).join("`, `") + "`"
 				)
 
 				.addFields([
 					{
-						name: "Usage",
-						value: `\nYou can send \`${prefix}help [command name]\` to get info on a specific command!`,
+						name: "Utilisation",
+						value: `\nTu peux envoyer \`${prefix}help [command name]\` Pour avoir des info sur une commande en special!`,
 					},
 				]);
 
