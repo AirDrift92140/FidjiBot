@@ -12,7 +12,7 @@
   </a>
 </p>
 
-> An **open source** `discord.js` bot template which is based on official [discord.js guide](https://discordjs.guide/) to get started on making your very personal discord bot!
+> Un bot **open source ✨** fait en `discord.js` en utilisant le [discord.js guide](https://discordjs.guide/)!
 
 ### 🏠 [Homepage](https://github.com/NamVr/DiscordBot-Template#readme)
 
